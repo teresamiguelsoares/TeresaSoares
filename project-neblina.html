@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Príncipe da Neblina — Teresa Soares</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@900&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+<link rel="stylesheet" href="project.css">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+/* "The cover" text runs in two columns across the 2nd and 3rd grid columns */
+.txt.two { grid-column: span 2; columns: 2; column-gap: clamp(24px, 4vw, 64px); }
+.txt.two h3 { column-span: all; }
+@media (max-width: 800px) { .txt.two { grid-column: auto; columns: 1; } }
+/* the handwritten title and the tear share one spot: both are white and blend with "difference", so the title shows
+   dark on the page and flips to light where the tear is open, like the lettering showing through the tear on the cover */
+.tt { position: relative; isolation: isolate; background: var(--bg); aspect-ratio: 380 / 120; margin-top: 9.6%; pointer-events: none; user-select: none; }
+.tt::before { content: ""; position: absolute; left: 0; right: 0; top: -31%; bottom: -42%; background: var(--bg); }   /* backdrop for the part of the tear that sticks out of the box */
+.tt img { position: absolute; display: block; height: auto; mix-blend-mode: difference; -webkit-user-drag: none; }
+.tt-tear { left: 35%; top: 50%; width: 30%; transform: translateY(-47%); }   /* the tear is taller than the box: it opens over the title and over the space around it */
+.tt-title { left: 0; top: 50%; width: 100%; transform: translateY(-50%); }
+/* smoke behind "The fog": the Prince of Mist drifting across the section, in the blue-green of the stories from the past */
+.fog .smoke { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; opacity: var(--fog, 0); }
+.fog .wrap { z-index: 1; }
+/* a stitch that sews itself under "The binding" */
+.stitch { margin-top: clamp(36px, 4.4vw, 64px); color: var(--ink); pointer-events: none; }
+.stitch svg { display: block; width: 100%; height: auto; overflow: visible; }
+.st-m { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.st-needle { opacity: 0; }
+.stitch.go .st-m { stroke-dashoffset: 0; transition: stroke-dashoffset 2.2s cubic-bezier(.5,0,.3,1); }
+.stitch.go .st-m2 { transition: stroke-dashoffset 1.3s ease-out 2.1s; }
+.stitch.go .st-needle { opacity: 1; transition: opacity .4s ease 3.2s; }
+@media (prefers-reduced-motion: reduce) { .st-m { stroke-dashoffset: 0; } .st-needle { opacity: 1; } }
+</style>
+<style>.links .stk{position:relative}.links .stk a.sub{position:absolute;top:100%;left:0;margin-top:6px;font-size:12px;font-weight:400;line-height:1.4;white-space:nowrap;color:var(--ink-soft);opacity:.6;text-decoration:none}.links .stk a.sub:hover{opacity:1}@media(max-width:1160px){.links a.stacked span{display:none}}</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="home.html" class="word">TERESA SOARES</a>
+
+      <div class="links">
+        <a href="home.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="mailto:teresa.miguel.soares@gmail.com" class="stacked">
+          Contact
+          <span>teresa.miguel.soares@gmail.com</span>
+        </a>
+        <div class="stk">
+          <a href="https://drive.google.com/file/d/1lCw1m9q41w9B95u5QCkzBIN3lbWE9ZXe/view?usp=drive_link" target="_blank" rel="noopener">CV</a>
+          <a class="sub" href="https://www.linkedin.com/in/teresa-soares-93975616b" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="toggle" id="toggleBtn" aria-label="Toggle dark mode">
+          <span class="icon-wrap" id="iconWrap">
+            <img class="icon icon-needle" id="iconNeedle" src="simbolos_luz/portfolio_linha-05.png" alt="">
+            <img class="icon icon-ball" id="iconBall" src="simbolos_luz/portfolio_linha-04.png" alt="">
+          </span>
+        </button>
+        <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="home.html#work">Work</a>
+      <a href="about.html">About</a>
+      <a href="mailto:teresa.miguel.soares@gmail.com">Contact</a>
+      <a href="https://drive.google.com/file/d/1lCw1m9q41w9B95u5QCkzBIN3lbWE9ZXe/view?usp=drive_link" target="_blank" rel="noopener">CV</a>
+      <a href="https://www.linkedin.com/in/teresa-soares-93975616b" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <main class="pj">
+    <section class="intro">
+      <div class="wrap">
+        <a class="back" href="home.html#work">← Work</a>
+        <div class="open">
+          <div class="open-l">
+            <h1 class="label">O Príncipe da Neblina</h1>
+            <span class="year">2025</span>
+          </div>
+          <dl class="facts"><div><dt>Role</dt><dd>Book design (concept, typography and layout) and bookbinding</dd></div><div><dt>Team</dt><dd>Teresa Soares</dd></div><div><dt>Course</dt><dd>Edition Design</dd></div><div><dt>Skills</dt><dd>Editorial, Layout, Bookbinding</dd></div><div><dt>Tools</dt><dd>Adobe InDesign</dd></div></dl>
+          <p class="open-p">A redesign of Carlos Ruiz Zafón’s novel, where the fog slowly takes over the pages. Made for the Edition Design course, <em>O Príncipe da Neblina</em> (<em>The Prince of Mist</em>) grows its fog through the book until the pages turn from white to black. The stories from the past are set in navy blue, in a handwritten typeface, as if they were letters, and the dialogue is split into one column per character. I also bound the book myself.</p>
+        </div>
+      </div>
+    </section>
+
+<section class="sec flow"><div class="wrap"><div class="board"><figure class="m framed" style="--ar:3/4" data-zoom data-cap="The closed book"><div class="m-frame slot" data-src="neblina/DSC07624-crop.jpg"><span class="ph"><b>Add image or GIF</b><small>neblina/DSC07624-crop.jpg</small></span></div><figcaption><span class=cr>Teresa Soares © The closed book</span><button class="zl" type="button">Click here to see more</button></figcaption></figure><div class="txt"><h3>The brief</h3><p>“Com um livro faço um livro” (“With a book, I make a book”) asked each student to redesign a book of their choice, ideally one that had only been published as a conventional, text-only edition. The goal was to apply the ideas of the “hybrid novel” and “visual writing”, adding graphic elements that translate or expand the meaning of the original text.</p><p>Cover, format, materials, binding and titles (what Gérard Genette calls the paratext) had to work together as an extension of the content.</p></div><div class="txt"><p>I thought of Carlos Ruiz Zafón straight away, because I knew that with any of his books I could turn a book made of words into a visual experience. The book couldn’t be too long, so I chose the last one I had read, <em>O Príncipe da Neblina</em>.</p><p>My first idea was to make the mystery more visible and almost turn the reader into the main character, with the clues and other things mentioned in the book becoming extra elements. I set that aside to focus on the heart of the book. So I went back to the story and realised it was really about the Prince of Mist himself, and he became my main element.</p></div><figure class="m" style="--ar:3/2" data-zoom data-cap="The cover, with the tear"><div class="m-frame slot" data-src="neblina/DSC07617.jpg"><span class="ph"><b>Add image or GIF</b><small>neblina/DSC07617.jpg</small></span></div><figcaption><span class=cr>Teresa Soares © The cover, with the tear</span><button class="zl" type="button">Click here to see more</button></figcaption></figure><div class="txt two"><h3>The cover</h3><p>The cover is where the Prince of Mist shows up first, before the reader has opened anything. I gave it a tear, almost as if the tear were the Prince himself: something that breaks through the cover and lets the past show through.</p><p>That is how the cover brings the past and the present into the same object. The surface is the present, a closed, dark book. The tear opens it and shows there is something else underneath, which is exactly what happens in the story, where the stories from the past are what allow the kids to understand what is happening now.</p><p>The cover also sets the tone for what comes inside: the fog that grows page by page, and the past that keeps breaking into the present.</p></div></div></div></section><section class="sec fog" data-fog><canvas class="smoke" aria-hidden="true"></canvas><div class="wrap"><div class="board"><div class="txt"><h3>The fog</h3><p>I made the book darker, in colour and in mood. I wanted to give the reader some visual tension and make the presence of the Prince of Mist more visible, so the fog increases throughout the book and the pages go from white to completely black.</p><p>It doesn’t happen all at once. The first pages are almost white, with a few grey stains drifting in from the margins. Turn the page, and the stains spread and darken until they stop being a background and become the page itself.</p></div><figure class="m" style="--ar:3/2" data-zoom data-cap="The fog grows through the book"><div class="m-frame slot" data-src="videos/neblina1.mp4"><span class="ph"><b>Add image or GIF</b><small>videos/neblina1.mp4</small></span></div><figcaption><span class=cr>Teresa Soares © The fog grows through the book</span><button class="zl" type="button">Click here to see more</button></figcaption></figure><figure class="m" style="--ar:3/2" data-zoom data-cap="White pages"><div class="m-frame slot" data-src="neblina/DSC07631.jpg"><span class="ph"><b>Add image or GIF</b><small>neblina/DSC07631.jpg</small></span></div><figcaption><span class=cr>Teresa Soares © White pages</span><button class="zl" type="button">Click here to see more</button></figcaption></figure><figure class="m" style="--ar:3/2" data-zoom data-cap="The fog arrives"><div class="m-frame slot" data-src="neblina/DSC07641.jpg"><span class="ph"><b>Add image or GIF</b><small>neblina/DSC07641.jpg</small></span></div><figcaption><span class=cr>Teresa Soares © The fog arrives</span><button class="zl" type="button">Click here to see more</button></figcaption></figure><div class="txt"><p>The type follows the fog. On the light pages the text is black. Once the paper goes dark it flips to white, so the words stay the one thing you can still make out while everything else disappears.</p><p>You can see it from the outside too. With the book closed, the edge of the pages already tells the story: pale paper at the start, darker paper at the end, a gradient you can read from the side before opening anything. By the last chapters there is almost nothing left but white type on black, as if the reader had walked into the fog as well.</p></div><figure class="m" style="--ar:3/2" data-zoom data-cap="Completely black"><div class="m-frame slot" data-src="neblina/DSC07634.jpg"><span class="ph"><b>Add image or GIF</b><small>neblina/DSC07634.jpg</small></span></div><figcaption><span class=cr>Teresa Soares © Completely black</span><button class="zl" type="button">Click here to see more</button></figcaption></figure></div></div></section><section class="sec"><div class="wrap"><div class="board"><div class="txt"><h3>The past</h3><p>The book is full of flashbacks and stories from the past, and I wanted to give them importance, because those stories are what allow the kids to work out what is happening. To make the difference clear, I set them in a typeface that imitates handwriting, as if they were letters someone had written, and in navy blue. That way the reader can tell that these are the sailor’s stories and also that they belong to the past.</p></div><figure class="m" style="--ar:3/2" data-zoom data-cap="The stories from the past, in a handwritten typeface and navy blue"><div class="m-frame slot" data-src="neblina/DSC07632.jpg"><span class="ph"><b>Add image or GIF</b><small>neblina/DSC07632.jpg</small></span></div><figcaption><span class=cr>Teresa Soares © The stories from the past, in a handwritten typeface and navy blue</span><button class="zl" type="button">Click here to see more</button></figcaption></figure><figure class="m" style="--ar:3/2" data-zoom data-cap="One column for each character"><div class="m-frame slot" data-src="neblina/DSC07635.jpg"><span class="ph"><b>Add image or GIF</b><small>neblina/DSC07635.jpg</small></span></div><figcaption><span class=cr>Teresa Soares © One column for each character</span><button class="zl" type="button">Click here to see more</button></figcaption></figure><div class="txt"><h3>The columns</h3><p>The book has a lot of dialogue, so I split the characters into columns, one for each of them. I wanted the reader to see the scene happening in front of them and to feel the emotions of the book more. This was the most important decision, and the one that gave the book its most visual look.</p><figure class="m" style="--ar:1586/1200" data-zoom data-cap="The grid"><div class="m-frame slot" data-src="neblina/colunas.mp4"><span class="ph"><b>Add video</b><small>neblina/colunas.mp4</small></span></div></figure></div><div class="txt"><h3>The binding</h3><p>I bound the book myself, sewing the whole thing, and made the hardcover out of cardboard.</p><p>Because the whole book is full of anomalies, I carried that into the binding as well. The page numbers sit on the inside of the page, and the spine is on the inside instead of the outside.</p><div class="tt" aria-hidden="true"><img class="tt-tear" alt="" loading="lazy" src="neblina/neblina-tear-loop.webp" data-f="neblina/neblina-tear-loop.webp|projects/neblina/neblina-tear-loop.webp|videos/neblina/neblina-tear-loop.webp|neblina-tear-loop.webp" onerror="var s=this.dataset.f.split('|'),i=+(this.dataset.i||0);if(i<s.length){this.dataset.i=i+1;this.src=s[i]}else{this.style.display='none'}"><img class="tt-title" alt="" loading="lazy" src="neblina/neblina-title-white.png" data-f="neblina/neblina-title-white.png|projects/neblina/neblina-title-white.png|videos/neblina/neblina-title-white.png|neblina-title-white.png" onerror="var s=this.dataset.f.split('|'),i=+(this.dataset.i||0);if(i<s.length){this.dataset.i=i+1;this.src=s[i]}else{this.style.display='none'}"></div></div><div class="txt"><figure class="m" style="margin-top:0;--ar:1616/483" data-zoom data-cap="The binding and the hardcover"><div class="m-frame slot" data-src="neblina/DSC07626.jpg"><span class="ph"><b>Add image or GIF</b><small>neblina/DSC07626.jpg</small></span></div><figcaption><span class=cr>Teresa Soares © The binding and the hardcover</span><button class="zl" type="button">Click here to see more</button></figcaption></figure><figure class="m" style="--ar:3/2" data-zoom data-cap="Sewn by hand"><div class="m-frame slot" data-src="neblina/DSC07638.jpg"><span class="ph"><b>Add image or GIF</b><small>neblina/DSC07638.jpg</small></span></div><figcaption><span class=cr>Teresa Soares © Sewn by hand</span><button class="zl" type="button">Click here to see more</button></figcaption></figure></div></div></div></section>
+
+<section class="credits sec"><div class="wrap"><h2>Credits</h2><div class="body"><p>Original text by Carlos Ruiz Zafón.</p><p>Individual project for Edition Design, Faculty of Fine Arts, University of Lisbon.</p></div></div></section>
+
+    <a class="next" href="project-a-to-b.html">
+      <div class="wrap">
+        <div><small>Next project</small><strong>A to B</strong></div>
+        <span class="arr" aria-hidden="true">→</span>
+      </div>
+    </a>
+
+    <footer class="foot">
+      <div class="wrap">
+        <a class="back-btn" href="home.html#work"><span aria-hidden="true">‹</span>Back to work</a>
+        <small>© Teresa Soares</small>
+      </div>
+    </footer>
+  </main>
+
+  
+  <button class="totop" type="button">scroll to top</button>
+
+  <script src="portfolio.js"></script>
+  <script src="project.js"></script>
+<script>
+(function () {
+  var cv = document.querySelector('.fog .smoke'); if (!cv) return;
+  var sec = cv.parentElement, ctx = cv.getContext('2d');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var W = 0, H = 0, SC = 0.5, visible = false, raf = 0, t0 = performance.now();
+  var COLS = [[58, 122, 142], [46, 100, 132], [70, 142, 150], [52, 112, 128]];
+
+  function rnd(a, b) { return a + Math.random() * (b - a); }
+  /* a smoke sprite = several soft blobs piled up, so no two puffs look the same */
+  function sprite(c) {
+    var s = document.createElement('canvas'); s.width = s.height = 256;
+    var g = s.getContext('2d');
+    for (var i = 0; i < 9; i++) {
+      var x = rnd(70, 186), y = rnd(70, 186), r = rnd(50, 110);
+      var gr = g.createRadialGradient(x, y, 0, x, y, r);
+      gr.addColorStop(0, 'rgba(' + c + ',0.55)'); gr.addColorStop(0.5, 'rgba(' + c + ',0.2)'); gr.addColorStop(1, 'rgba(' + c + ',0)');
+      g.fillStyle = gr; g.fillRect(0, 0, 256, 256);
+    }
+    return s;
+  }
+  var sprites = []; for (var k = 0; k < 8; k++) sprites.push(sprite(COLS[k % COLS.length].join(',')));
+
+  var puffs = [], plume = [];
+  function build() {
+    var r = sec.getBoundingClientRect(); W = Math.max(1, Math.round(r.width * SC)); H = Math.max(1, Math.round(r.height * SC));
+    cv.width = W; cv.height = H;
+    puffs = []; for (var i = 0; i < 26; i++) puffs.push({ x: rnd(-0.1, 1.1), y: rnd(0.05, 0.95), r: rnd(0.16, 0.34), v: rnd(0.010, 0.026), ph: rnd(0, 6.28), a: rnd(0.05, 0.11), s: sprites[i % sprites.length], rot: rnd(0, 6.28), rv: rnd(-0.05, 0.05) });
+    plume = []; for (var j = 0; j < 22; j++) plume.push({ lag: j * 0.028, ph: rnd(0, 6.28), r: rnd(0.15, 0.27) * (1 - j * 0.012), a: 0.2 * (1 - j / 26), s: sprites[(j + 3) % sprites.length], rot: rnd(0, 6.28) });
+  }
+
+  function draw(now) {
+    var t = (now - t0) / 1000;
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = 'source-over';
+    puffs.forEach(function (p) {
+      var x = ((p.x + p.v * t + 0.3) % 1.6 - 0.3) * W, y = (p.y + Math.sin(t * 0.18 + p.ph) * 0.05) * H, r = p.r * W;
+      ctx.save(); ctx.translate(x, y); ctx.rotate(p.rot + p.rv * t); ctx.globalAlpha = p.a * (0.8 + 0.2 * Math.sin(t * 0.3 + p.ph));
+      ctx.drawImage(p.s, -r, -r, r * 2, r * 2); ctx.restore();
+    });
+    /* the Prince: a long trail of smoke that crosses the section from one side to the other, then comes round again */
+    var cyc = (t / 18) % 1, head = -0.25 + cyc * 1.6;
+    plume.forEach(function (p) {
+      var u = head - p.lag, x = u * W, y = (0.5 + Math.sin(u * 5 + p.ph * 0.3) * 0.13 + Math.sin(t * 0.4 + p.ph) * 0.03) * H, r = p.r * W * (1 + 0.1 * Math.sin(t * 0.5 + p.ph));
+      var edge = Math.min(1, Math.max(0, Math.min(u + 0.2, 1.2 - u) * 3));      // fades in and out at the borders
+      ctx.save(); ctx.translate(x, y); ctx.rotate(p.rot + t * 0.04); ctx.globalAlpha = p.a * edge;
+      ctx.drawImage(p.s, -r, -r, r * 2, r * 2); ctx.restore();
+    });
+    ctx.globalCompositeOperation = 'source-over';
+  }
+
+  function loop(now) { if (!visible) { raf = 0; return; } draw(now); raf = requestAnimationFrame(loop); }
+  function start() { if (reduce) { draw(t0 + 6000); return; } if (!raf) raf = requestAnimationFrame(loop); }
+
+  build();
+  new IntersectionObserver(function (e) { visible = e[0].isIntersecting; if (visible) start(); }, { rootMargin: '200px' }).observe(sec);
+  var rz; addEventListener('resize', function () { clearTimeout(rz); rz = setTimeout(function () { build(); if (reduce) draw(t0 + 6000); }, 200); });
+  addEventListener('load', build);
+})();
+</script>
+<script>
+(function(){var s=document.querySelector('.stitch');if(!s)return;
+ if(!('IntersectionObserver' in window)){s.classList.add('go');return;}
+ new IntersectionObserver(function(e,o){if(e[0].isIntersecting){s.classList.add('go');o.disconnect();}},{threshold:0.6}).observe(s);})();
+</script>
+</body>
+</html>

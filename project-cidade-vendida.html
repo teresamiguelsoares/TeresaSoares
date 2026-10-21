@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cidade Vendida — Teresa Soares</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@900&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+<link rel="stylesheet" href="project.css">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+.board > .sub.r{row-gap:clamp(48px,7vw,104px)}
+.cmp3{--p1:33.3%;--p2:66.6%;position:relative;aspect-ratio:5/4;border-radius:6px;overflow:hidden;background:var(--paper-ph);cursor:ew-resize;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.c3{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;-webkit-user-drag:none}
+.c3-n{clip-path:inset(0 calc(100% - var(--p2)) 0 0)}
+.c3-t{clip-path:inset(0 calc(100% - var(--p1)) 0 0)}
+.c3-tag{position:absolute;top:12px;z-index:3;padding:3px 9px;border-radius:99px;background:var(--bg);font:500 10px/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink);pointer-events:none}
+.c3-tag.a{left:12px}.c3-tag.c{right:12px}.c3-tag.b{left:calc((var(--p1) + var(--p2)) / 2);translate:-50% 0}
+.c3-h{position:absolute;top:0;bottom:0;z-index:4;width:2px;margin-left:-1px;background:var(--bg);outline:none}
+.c3-h[data-h="1"]{left:var(--p1)}.c3-h[data-h="2"]{left:var(--p2)}
+.c3-h::after{content:"↔";position:absolute;top:50%;left:50%;translate:-50% -50%;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--bg);color:var(--ink);font-size:14px;box-shadow:0 4px 16px rgba(0,0,0,.2)}
+.c3-h:focus-visible::after{outline:2px solid var(--ink);outline-offset:2px}
+.m.fit{width:74%}.m.fit .m-frame{background:#e2e2e2}.m.fit .m-frame>img,.m.fit .m-frame>video{object-fit:contain!important;transform:none!important}@media (max-width:800px){.m.fit{width:100%}}
+.board > .col3{display:flex;flex-direction:column;gap:clamp(28px,3vw,44px)}.board > .col3 > *{min-width:0}
+</style>
+<style>.links .stk{position:relative}.links .stk a.sub{position:absolute;top:100%;left:0;margin-top:6px;font-size:12px;font-weight:400;line-height:1.4;white-space:nowrap;color:var(--ink-soft);opacity:.6;text-decoration:none}.links .stk a.sub:hover{opacity:1}@media(max-width:1160px){.links a.stacked span{display:none}}</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="home.html" class="word">TERESA SOARES</a>
+
+      <div class="links">
+        <a href="home.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="mailto:teresa.miguel.soares@gmail.com" class="stacked">
+          Contact
+          <span>teresa.miguel.soares@gmail.com</span>
+        </a>
+        <div class="stk">
+          <a href="https://drive.google.com/file/d/1lCw1m9q41w9B95u5QCkzBIN3lbWE9ZXe/view?usp=drive_link" target="_blank" rel="noopener">CV</a>
+          <a class="sub" href="https://www.linkedin.com/in/teresa-soares-93975616b" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="toggle" id="toggleBtn" aria-label="Toggle dark mode">
+          <span class="icon-wrap" id="iconWrap">
+            <img class="icon icon-needle" id="iconNeedle" src="simbolos_luz/portfolio_linha-05.png" alt="">
+            <img class="icon icon-ball" id="iconBall" src="simbolos_luz/portfolio_linha-04.png" alt="">
+          </span>
+        </button>
+        <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="home.html#work">Work</a>
+      <a href="about.html">About</a>
+      <a href="mailto:teresa.miguel.soares@gmail.com">Contact</a>
+      <a href="https://drive.google.com/file/d/1lCw1m9q41w9B95u5QCkzBIN3lbWE9ZXe/view?usp=drive_link" target="_blank" rel="noopener">CV</a>
+      <a href="https://www.linkedin.com/in/teresa-soares-93975616b" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <main class="pj">
+    <section class="intro">
+      <div class="wrap">
+        <a class="back" href="home.html#work">← Work</a>
+        <div class="open">
+          <div class="open-l">
+            <h1 class="label">Cidade Vendida</h1>
+            <span class="year">2025</span>
+            
+          </div>
+          <dl class="facts"><div><dt>Role</dt><dd>Research, editorial design, bookbinding</dd></div><div><dt>Team</dt><dd>Salete Correia, Teresa Soares, Vasco Carrilho</dd></div><div><dt>Course</dt><dd>Communication Design V</dd></div><div><dt>Skills</dt><dd>Editorial, Bookbinding</dd></div><div><dt>Tools</dt><dd>Adobe InDesign, Adobe Firefly</dd></div></dl>
+          <p class="open-p">Lisbon’s industrial spaces, read across generations. An editorial project for Communication Design V, developed from the brief <em>The Whole Earth Catalog Redux</em>. The edition, <em>Cidade Vendida</em>, looks at how Lisbon’s industrial spaces, built for work and production, were reused to answer the needs of the contemporary city, and at how differently each generation reads them.</p>
+        </div>
+      </div>
+    </section>
+
+<section class="sec flow"><div class="wrap"><div class="board"><figure class="m framed z" style="--ar:3/4;--s:1.1" data-zoom data-cap="Cidade Vendida, the edition"><div class="m-frame slot" data-src="cidadevendida/DSC07591.jpg"><span class="ph"><b>Add image or GIF</b><small>cidadevendida/DSC07591.jpg</small></span></div><figcaption><span class=cr>Teresa Soares © Cidade Vendida, the edition</span><button class="zl" type="button">Click here to see more</button></figcaption></figure><div class="txt"><h3>The brief</h3><p>The main project of the semester asked us to represent particular and problematic perspectives of contemporary reality, starting from the Whole Earth Catalog, and to explore the designer as author and editor: someone who coordinates the research, the selection and the presentation of content.</p><p>Each group adapted one thematic section of the catalog to give access to situated knowledge for a specific community, framed by Donna Haraway’s idea of situated knowledges.</p></div><div class="col3"><div class="txt"><p>The work was collective and included a research dossier, a publication, an audiovisual piece and a website.</p></div><figure class="m" style="--ar:3/2" data-zoom data-cap=""><div class="m-frame slot" data-src="cidadevendida/DSC07607.jpg"><span class="ph"><b>Add image or GIF</b><small>cidadevendida/DSC07607.jpg</small></span></div><figcaption><span class=cr>Teresa Soares ©</span><button class="zl" type="button">Click here to see more</button></figcaption></figure></div><div class="txt"><h3>The theme</h3><p><em>Cidade Vendida</em> explores how spaces dedicated to work and production were transformed over the last decades. Factories, warehouses and workshops became cultural centres, creative districts and leisure destinations, shaping a Lisbon whose reading changes drastically from one generation to the next.</p><p>Reuse has become an established urban practice, and with it the way society relates to space has shifted. Projects of requalification spread across areas such as Alcântara, Marvila and Parque das Nações show how a reused space can become a device for reading the city, one that holds memory and future together, absorbing identities and reconfiguring them.</p><p>We think of these places as “soft infrastructures”, where architecture, culture and community meet and where tensions between preservation and consumption, belonging and exclusion, identity and transformation become visible.</p></div><div class="sub r"><figure class="m" style="--ar:3/2" data-zoom data-cap=""><div class="m-frame slot" data-src="cidadevendida/DSC07593.jpg"><span class="ph"><b>Add image or GIF</b><small>cidadevendida/DSC07593.jpg</small></span></div><figcaption><span class=cr>Teresa Soares ©</span><button class="zl" type="button">Click here to see more</button></figcaption></figure><figure class="m" style="--ar:3/2" data-zoom data-cap=""><div class="m-frame slot" data-src="cidadevendida/DSC07595.jpg"><span class="ph"><b>Add image or GIF</b><small>cidadevendida/DSC07595.jpg</small></span></div><figcaption><span class=cr>Teresa Soares ©</span><button class="zl" type="button">Click here to see more</button></figcaption></figure><figure class="m" style="--ar:3/2" data-zoom data-cap=""><div class="m-frame slot" data-src="cidadevendida/DSC07606.jpg"><span class="ph"><b>Add image or GIF</b><small>cidadevendida/DSC07606.jpg</small></span></div><figcaption><span class=cr>Teresa Soares ©</span><button class="zl" type="button">Click here to see more</button></figcaption></figure><figure class="m" style="--ar:3/2" data-zoom data-cap=""><div class="m-frame slot" data-src="cidadevendida/DSC07600.jpg"><span class="ph"><b>Add image or GIF</b><small>cidadevendida/DSC07600.jpg</small></span></div><figcaption><span class=cr>Teresa Soares ©</span><button class="zl" type="button">Click here to see more</button></figcaption></figure></div><div class="sub"><div class="cmp3" data-cmp3 role="group" aria-label="Lisbon street, LX Factory"><img class="c3 c3-f" src="cidadevendida/lx-future.jpg" alt="Lisbon street, LX Factory, future" loading="lazy"><img class="c3 c3-n" src="cidadevendida/lx-now.jpg" alt="Lisbon street, LX Factory, now" loading="lazy"><img class="c3 c3-t" src="cidadevendida/lx-then.jpg" alt="Lisbon street, LX Factory, then" loading="lazy"><span class="c3-tag a">Then</span><span class="c3-tag b">Now</span><span class="c3-tag c">Future</span><span class="c3-h" data-h="1" tabindex="0" role="slider" aria-label="Move between Then and Now" aria-valuemin="0" aria-valuemax="100"></span><span class="c3-h" data-h="2" tabindex="0" role="slider" aria-label="Move between Now and Future" aria-valuemin="0" aria-valuemax="100"></span></div><div class="cmp3" data-cmp3 role="group" aria-label="Santa Clara market"><img class="c3 c3-f" src="cidadevendida/santaclara-future.jpg" alt="Santa Clara market, future" loading="lazy"><img class="c3 c3-n" src="cidadevendida/santaclara-now.jpg" alt="Santa Clara market, now" loading="lazy"><img class="c3 c3-t" src="cidadevendida/santaclara-then.jpg" alt="Santa Clara market, then" loading="lazy"><span class="c3-tag a">Then</span><span class="c3-tag b">Now</span><span class="c3-tag c">Future</span><span class="c3-h" data-h="1" tabindex="0" role="slider" aria-label="Move between Then and Now" aria-valuemin="0" aria-valuemax="100"></span><span class="c3-h" data-h="2" tabindex="0" role="slider" aria-label="Move between Now and Future" aria-valuemin="0" aria-valuemax="100"></span></div><div class="cmp3" data-cmp3 role="group" aria-label="Time Out Market"><img class="c3 c3-f" src="cidadevendida/timeout-future.jpg" alt="Time Out Market, future" loading="lazy"><img class="c3 c3-n" src="cidadevendida/timeout-now.jpg" alt="Time Out Market, now" loading="lazy"><img class="c3 c3-t" src="cidadevendida/timeout-then.jpg" alt="Time Out Market, then" loading="lazy"><span class="c3-tag a">Then</span><span class="c3-tag b">Now</span><span class="c3-tag c">Future</span><span class="c3-h" data-h="1" tabindex="0" role="slider" aria-label="Move between Then and Now" aria-valuemin="0" aria-valuemax="100"></span><span class="c3-h" data-h="2" tabindex="0" role="slider" aria-label="Move between Now and Future" aria-valuemin="0" aria-valuemax="100"></span></div><div class="cmp3" data-cmp3 role="group" aria-label="Alcântara and the bridge"><img class="c3 c3-f" src="cidadevendida/bridge-future.jpg" alt="Alcântara and the bridge, future" loading="lazy"><img class="c3 c3-n" src="cidadevendida/bridge-now.jpg" alt="Alcântara and the bridge, now" loading="lazy"><img class="c3 c3-t" src="cidadevendida/bridge-then.jpg" alt="Alcântara and the bridge, then" loading="lazy"><span class="c3-tag a">Then</span><span class="c3-tag b">Now</span><span class="c3-tag c">Future</span><span class="c3-h" data-h="1" tabindex="0" role="slider" aria-label="Move between Then and Now" aria-valuemin="0" aria-valuemax="100"></span><span class="c3-h" data-h="2" tabindex="0" role="slider" aria-label="Move between Now and Future" aria-valuemin="0" aria-valuemax="100"></span></div></div><div class="txt"><h3>Two cities</h3><p>The edition puts two cities in dialogue: the one we inherited, and the one previous generations knew, where these same spaces had very different functions and meanings. The places we now see as icons of creativity were, for our parents and grandparents, settings of routine, effort and industry.</p><p>We walk through Lisbon with our generation’s eyes and build a visual and reflective reading of it, not as neutral observers but as inhabitants affected by its transformations. The project doesn’t look for final answers. It tries to bring out the questions that appear when a city changes faster than the generations can follow, and when a reused space stops being just a place and becomes a way of thinking about Lisbon.</p></div><div class="cmp3" data-cmp3 role="group" aria-label="Arch at Campo de Santa Clara"><img class="c3 c3-f" src="cidadevendida/arch-future.jpg" alt="Arch at Campo de Santa Clara, future" loading="lazy"><img class="c3 c3-n" src="cidadevendida/arch-now.jpg" alt="Arch at Campo de Santa Clara, now" loading="lazy"><img class="c3 c3-t" src="cidadevendida/arch-then.jpg" alt="Arch at Campo de Santa Clara, then" loading="lazy"><span class="c3-tag a">Then</span><span class="c3-tag b">Now</span><span class="c3-tag c">Future</span><span class="c3-h" data-h="1" tabindex="0" role="slider" aria-label="Move between Then and Now" aria-valuemin="0" aria-valuemax="100"></span><span class="c3-h" data-h="2" tabindex="0" role="slider" aria-label="Move between Now and Future" aria-valuemin="0" aria-valuemax="100"></span></div><div class="cmp3" data-cmp3 role="group" aria-label="Port silos"><img class="c3 c3-f" src="cidadevendida/silos-future.jpg" alt="Port silos, future" loading="lazy"><img class="c3 c3-n" src="cidadevendida/silos-now.jpg" alt="Port silos, now" loading="lazy"><img class="c3 c3-t" src="cidadevendida/silos-then.jpg" alt="Port silos, then" loading="lazy"><span class="c3-tag a">Then</span><span class="c3-tag b">Now</span><span class="c3-tag c">Future</span><span class="c3-h" data-h="1" tabindex="0" role="slider" aria-label="Move between Then and Now" aria-valuemin="0" aria-valuemax="100"></span><span class="c3-h" data-h="2" tabindex="0" role="slider" aria-label="Move between Now and Future" aria-valuemin="0" aria-valuemax="100"></span></div><div class="cmp3" data-cmp3 role="group" aria-label="Parque das Nações"><img class="c3 c3-f" src="cidadevendida/parque-future.jpg" alt="Parque das Nações, future" loading="lazy"><img class="c3 c3-n" src="cidadevendida/parque-now.jpg" alt="Parque das Nações, now" loading="lazy"><img class="c3 c3-t" src="cidadevendida/parque-then.jpg" alt="Parque das Nações, then" loading="lazy"><span class="c3-tag a">Then</span><span class="c3-tag b">Now</span><span class="c3-tag c">Future</span><span class="c3-h" data-h="1" tabindex="0" role="slider" aria-label="Move between Then and Now" aria-valuemin="0" aria-valuemax="100"></span><span class="c3-h" data-h="2" tabindex="0" role="slider" aria-label="Move between Now and Future" aria-valuemin="0" aria-valuemax="100"></span></div><div class="txt"><h3>The publication</h3><p>The edition opens with an editorial and is built around a simple device: black-and-white archive photographs of Lisbon’s industrial spaces face colour photographs of the same places today. A fold-out collage opens the book, and every spread puts then and now side by side, so the reader does the comparing.</p><p>I researched and designed the LX Factory, Time Out Market and Parque das Nações chapters, and bound the book. The images of the future were generated with Adobe Firefly, and the publication was laid out in InDesign.</p></div><figure class="m wide2 fit" style="--ar:16/9" data-zoom data-cap=""><div class="m-frame slot" data-src="videos/VENDIDA3.1"><span class="ph"><b>Add image or GIF</b><small>videos/VENDIDA3.1</small></span></div><figcaption><span class=cr>Teresa Soares ©</span><button class="zl" type="button">Click here to see more</button></figcaption></figure></div></div></section>
+
+    <section class="credits sec"><div class="wrap"><h2>Credits</h2><div class="body"><p>Group project for Communication Design V, Faculty of Fine Arts, University of Lisbon, 2025/26.</p></div></div></section>
+
+    <a class="next" href="project-azucrinacao.html">
+      <div class="wrap">
+        <div><small>Next project</small><strong>Azucrinação</strong></div>
+        <span class="arr" aria-hidden="true">→</span>
+      </div>
+    </a>
+
+    <footer class="foot">
+      <div class="wrap">
+        <a class="back-btn" href="home.html#work"><span aria-hidden="true">‹</span>Back to work</a>
+        <small>© Teresa Soares</small>
+      </div>
+    </footer>
+  </main>
+
+  
+  <button class="totop" type="button">scroll to top</button>
+
+  <script src="portfolio.js"></script>
+  <script src="project.js"></script>
+  <script>
+  /* safety net, independent of project.js: if a picture with a file name was not found where the page expects it,
+     look for it in the other usual places (noise/, videos/noise/, next to this page) */
+  addEventListener('load', function () {
+    setTimeout(function () {
+      document.querySelectorAll('.slot[data-src]').forEach(function (slot) {
+        var base = slot.dataset.src;
+        if (slot.classList.contains('has') || !/\.[a-z0-9]{2,4}$/i.test(base)) return;
+        var tail = base.replace(/^projects\//, '');
+        var cands = [tail, 'videos/' + tail, 'projects/' + tail, tail.split('/').pop(), 'videos/' + tail.split('/').pop()];
+        if (/\.jpe?g$/i.test(base)) cands = cands.concat(cands.map(function (c) { return c.replace(/\.jpe?g$/i, '.png'); }));
+        (function next(i) {
+          if (i >= cands.length || slot.classList.contains('has')) return;
+          var url = cands[i], vid = /\.(mp4|webm)$/i.test(url), el;
+          if (vid) { el = document.createElement('video'); el.muted = el.loop = el.autoplay = el.playsInline = true; el.setAttribute('muted', ''); el.onloadeddata = ok; }
+          else { el = new Image(); el.alt = ''; el.onload = ok; }
+          el.onerror = function () { next(i + 1); };
+          function ok() {
+            if (slot.classList.contains('has')) return;
+            slot.appendChild(el); slot.classList.add('has');
+            if (el.play) el.play().catch(function () {});
+            var host = slot.closest('[data-zoom]');
+            if (host) { host.classList.add('has-media'); host.tabIndex = 0; host.setAttribute('role', 'button'); }
+          }
+          el.src = url;
+        })(0);
+      });
+    }, 1200);
+  });
+
+  </script>
+<script>
+(function(){
+  document.querySelectorAll('[data-cmp3]').forEach(function(el){
+    var p=[33.3,66.6];
+    function set(){el.style.setProperty('--p1',p[0]+'%');el.style.setProperty('--p2',p[1]+'%');
+      el.querySelectorAll('.c3-h').forEach(function(h,i){h.setAttribute('aria-valuenow',Math.round(p[i]))});}
+    function move(i,v){
+      if(i===0)p[0]=Math.max(7,Math.min(v,p[1]-14)); else p[1]=Math.min(93,Math.max(v,p[0]+14));
+      set();
+    }
+    var cur=null;
+    function pct(e){var r=el.getBoundingClientRect();return (e.clientX-r.left)/r.width*100;}
+    el.addEventListener('pointerdown',function(e){
+      var v=pct(e);cur=Math.abs(v-p[0])<=Math.abs(v-p[1])?0:1;
+      try{el.setPointerCapture(e.pointerId)}catch(_){}
+      move(cur,v);
+    });
+    el.addEventListener('pointermove',function(e){if(cur===null)return;move(cur,pct(e));});
+    function up(){cur=null}
+    el.addEventListener('pointerup',up);el.addEventListener('pointercancel',up);
+    el.querySelectorAll('.c3-h').forEach(function(h,i){
+      h.addEventListener('keydown',function(e){
+        if(e.key==='ArrowLeft'){move(i,p[i]-3);e.preventDefault();}
+        if(e.key==='ArrowRight'){move(i,p[i]+3);e.preventDefault();}
+      });
+    });
+    set();
+  });
+})();
+</script>
+</body>
+</html>

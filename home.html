@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teresa Soares</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+<link rel="stylesheet" href="playground.css">
+<style>.pg-copy{z-index:99990 !important}</style>
+<style>.links .stk{position:relative}.links .stk a.sub{position:absolute;top:100%;left:0;margin-top:6px;font-size:12px;font-weight:400;line-height:1.4;white-space:nowrap;color:var(--ink-soft);opacity:.6;text-decoration:none}.links .stk a.sub:hover{opacity:1}@media(max-width:1160px){.links a.stacked span{display:none}}</style>
+<style>.home-end{max-width:1440px;margin:clamp(56px,8vw,112px) auto 0;border-top:1px solid var(--border,rgba(0,0,0,.12))}.he-in{display:grid;grid-template-columns:1fr 2fr;gap:24px;padding:clamp(32px,4vw,56px) 0 clamp(40px,5vw,72px)}.he-in h2{margin:0;font:600 clamp(19px,1.7vw,24px)/1.25 'Inter',sans-serif;color:var(--ink-soft,inherit)}.he-mail{margin:0 0 18px;font-size:clamp(20px,2.2vw,32px);letter-spacing:-.01em}.he-in a{color:var(--ink-soft,inherit);text-underline-offset:3px}.he-links{margin:0;display:flex;flex-wrap:wrap;gap:8px 28px;font-size:15px}@media(max-width:800px){.he-in{grid-template-columns:1fr}}</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="word">TERESA SOARES</a>
+
+      <div class="links">
+        <a href="#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="mailto:teresa.miguel.soares@gmail.com" class="stacked">
+          Contact
+          <span>teresa.miguel.soares@gmail.com</span>
+        </a>
+        <div class="stk">
+          <a href="https://drive.google.com/file/d/1lCw1m9q41w9B95u5QCkzBIN3lbWE9ZXe/view?usp=drive_link" target="_blank" rel="noopener">CV</a>
+          <a class="sub" href="https://www.linkedin.com/in/teresa-soares-93975616b" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="toggle" id="toggleBtn" aria-label="Toggle dark mode">
+          <span class="icon-wrap" id="iconWrap">
+            <img class="icon icon-needle" id="iconNeedle" src="simbolos_luz/portfolio_linha-05.png" alt="">
+            <img class="icon icon-ball" id="iconBall" src="simbolos_luz/portfolio_linha-04.png" alt="">
+          </span>
+        </button>
+        <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#work">Work</a>
+      <a href="about.html">About</a>
+      <a href="mailto:teresa.miguel.soares@gmail.com">Contact</a>
+      <a href="https://drive.google.com/file/d/1lCw1m9q41w9B95u5QCkzBIN3lbWE9ZXe/view?usp=drive_link" target="_blank" rel="noopener">CV</a>
+      <a href="https://www.linkedin.com/in/teresa-soares-93975616b" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="playground" tabindex="0" aria-label="Things I like to make. Drag in any direction to explore.">
+      <!-- Extra things I like to do: drop photos in the "home_fotos" folder as 01.jpg … 12.jpg (or change the src). To add or remove one, copy or delete a block. -->
+      <div class="pg-item" data-fx="0.1" data-fy="0.45" data-r="-4" style="--w: clamp(110px, 12vw, 180px); --ar: 1600 / 1200;" tabindex="0" aria-label="Extra 1">
+        <span class="pg-media"><img src="home_fotos/01.jpg" alt="" draggable="false" onerror="this.remove()"></span>
+      </div>
+      <div class="pg-item" data-fx="0.2" data-fy="0.12" data-r="3" style="--w: clamp(110px, 11vw, 170px); --ar: 1300 / 1400;" tabindex="0" aria-label="Extra 2">
+        <span class="pg-media" style="background:transparent"><img src="home_fotos/02.png" alt="" draggable="false" onerror="this.remove()"></span>
+      </div>
+      <div class="pg-item" data-fx="0.22" data-fy="0.52" data-r="-2" style="--w: clamp(110px, 12vw, 180px); --ar: 721 / 1600;" tabindex="0" aria-label="Extra 3">
+        <span class="pg-media"><img src="home_fotos/03.jpg" alt="" draggable="false" onerror="this.remove()"></span>
+      </div>
+      <div class="pg-item" data-fx="0.54" data-fy="0.14" data-r="4" style="--w: clamp(110px, 12vw, 180px); --ar: 1600 / 900;" tabindex="0" aria-label="Extra 4">
+        <span class="pg-media"><img src="home_fotos/04.jpg" alt="" draggable="false" onerror="this.remove()"></span>
+      </div>
+      <div class="pg-item" data-fx="0.55" data-fy="0.5" data-r="-3" style="--w: clamp(110px, 12vw, 180px); --ar: 1200 / 1600;" tabindex="0" aria-label="Extra 5">
+        <span class="pg-media"><img src="home_fotos/05.jpg" alt="" draggable="false" onerror="this.remove()"></span>
+      </div>
+      <div class="pg-item" data-fx="0.66" data-fy="0.28" data-r="2" style="--w: clamp(110px, 11vw, 170px); --ar: 1161 / 2576;" tabindex="0" aria-label="Extra 6">
+        <span class="pg-media"><img src="home_fotos/06.jpg" alt="" draggable="false" onerror="this.remove()"></span>
+      </div>
+      <div class="pg-item" data-fx="0.73" data-fy="0.56" data-r="-5" style="--w: clamp(110px, 12vw, 180px); --ar: 890 / 1244;" tabindex="0" aria-label="Extra 7">
+        <span class="pg-media"><img src="home_fotos/07.jpg" alt="" draggable="false" onerror="this.remove()"></span>
+      </div>
+      <div class="pg-item" data-fx="0.3" data-fy="0.78" data-r="2" style="--w: clamp(110px, 11vw, 170px); --ar: 1377 / 1600;" tabindex="0" aria-label="Extra 8">
+        <span class="pg-media"><img src="home_fotos/08.jpg" alt="" draggable="false" onerror="this.remove()"></span>
+      </div>
+      <div class="pg-item" data-fx="0.42" data-fy="0.9" data-r="-4" style="--w: clamp(110px, 12vw, 180px); --ar: 1220 / 1207;" tabindex="0" aria-label="Extra 9">
+        <span class="pg-media"><img src="home_fotos/09.jpg" alt="" draggable="false" onerror="this.remove()"></span>
+      </div>
+      <div class="pg-item" data-fx="0.66" data-fy="0.86" data-r="-2" style="--w: clamp(110px, 12vw, 180px); --ar: 1600 / 900;" tabindex="0" aria-label="Extra 10">
+        <span class="pg-media"><img src="home_fotos/10.jpg" alt="" draggable="false" onerror="this.remove()"></span>
+      </div>
+      <div class="pg-item" data-fx="0.8" data-fy="0.8" data-r="4" style="--w: clamp(110px, 11vw, 170px); --ar: 901 / 1600;" tabindex="0" aria-label="Extra 11">
+        <span class="pg-media"><img src="home_fotos/11.jpg" alt="" draggable="false" onerror="this.remove()"></span>
+      </div>
+      <div class="pg-item" data-fx="0.9" data-fy="0.3" data-r="-3" style="--w: clamp(110px, 12vw, 180px); --ar: 1400 / 1261;" tabindex="0" aria-label="Extra 12">
+        <span class="pg-media" style="background:transparent"><img src="home_fotos/12.png" alt="" draggable="false" onerror="this.remove()"></span>
+      </div>
+
+      <div class="pg-copy">
+        <p class="hero-greeting">Hey, I'm Teresa,</p>
+        <h1 class="hero-statement">a multidisciplinary designer who believes every page is an experience to be built, and that movement is the most powerful way to tell a story.</h1>
+        <p class="hero-sub">
+          I have a Bachelor's in Communication Design from the Faculty of Fine Arts, University of Lisbon.
+          Currently on an Erasmus internship in Barcelona.
+        </p>
+      </div>
+
+      <svg class="pg-draw" aria-hidden="true"><g class="pg-world"></g></svg>
+
+      <p class="pg-hint">Drag in any direction to explore. Pick up anything.</p>
+
+      <div class="pg-toolbar" role="toolbar" aria-label="Playground tools" aria-orientation="vertical">
+        <button class="pg-btn" type="button" data-tool="select" aria-pressed="true" aria-label="Move things" title="Move">
+          <svg viewBox="0 0 24 24"><path d="M5 3l14 8-6 2-2 6z"/></svg>
+        </button>
+        <button class="pg-btn" type="button" data-tool="pen" aria-pressed="false" aria-label="Draw" title="Draw">
+          <svg viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19z"/><path d="M14 7l3 3"/></svg>
+        </button>
+        <span class="pg-sep" aria-hidden="true"></span>
+        <div class="pg-swatches">
+          <button class="pg-swatch" type="button" data-color="var(--ink)" aria-pressed="true" aria-label="Blue pen" style="--c: var(--ink);"><i></i></button>
+          <button class="pg-swatch" type="button" data-color="#E8527F" aria-pressed="false" aria-label="Pink pen" style="--c: #E8527F;"><i></i></button>
+          <button class="pg-swatch" type="button" data-color="#F2B93B" aria-pressed="false" aria-label="Yellow pen" style="--c: #F2B93B;"><i></i></button>
+        </div>
+        <span class="pg-sep" aria-hidden="true"></span>
+        <button class="pg-btn" type="button" data-action="undo" aria-label="Undo last line" title="Undo">
+          <svg viewBox="0 0 24 24"><path d="M9 14L4 9l5-5"/><path d="M4 9h10a6 6 0 010 12h-3"/></svg>
+        </button>
+        <button class="pg-btn" type="button" data-action="clear" aria-label="Erase all drawings" title="Erase drawings">
+          <svg viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>
+        </button>
+        <button class="pg-btn" type="button" data-action="reset" aria-label="Reset the playground" title="Reset">
+          <svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 108-8H8"/><path d="M11 1L8 4l3 3"/></svg>
+        </button>
+      </div>
+
+      <button class="scroll-arrow" id="scrollArrow" aria-label="Scroll down">
+        <svg class="scroll-arrow-icon" viewBox="0 0 48 28" aria-hidden="true">
+          <path d="M5 4 L24 23 L43 4" />
+        </svg>
+      </button>
+    </section>
+
+    <section class="work-grid" id="work">
+      <div class="work-col">
+        <a class="work-card" href="project-noise.html" style="order: 1;" data-program="Communication Design VI">
+          <div class="work-thumb" style="height: 380px;"><img src="videos/noise.png" alt="A Designer at the End of Noise"></div>
+          <div class="work-row">
+            <p class="work-caption">A Designer at the End of Noise</p>
+            <p class="work-meta">EDITORIAL · WEBSITE</p>
+          </div>
+        </a>
+        <a class="work-card" href="project-pabul.html" style="order: 3;">
+          <div class="work-thumb" style="height: 480px;"><img src="videos/pabulcapa.png" alt="Pabul"></div>
+          <div class="work-row">
+            <p class="work-caption">Pabul</p>
+            <p class="work-meta">BRAND · VISUAL IDENTITY</p>
+          </div>
+        </a>
+        <a class="work-card" href="project-azucrinacao.html" style="order: 5;" data-program="Communication Design IV">
+          <div class="work-thumb" style="height: 340px;"><img src="videos/ezgif.com-gif-maker.gif" alt="Azucrinação"></div>
+          <div class="work-row">
+            <p class="work-caption">Azucrinação</p>
+            <p class="work-meta">BRAND · PACKAGING · VISUAL IDENTITY</p>
+          </div>
+        </a>
+      </div>
+      <div class="work-col">
+        <a class="work-card" href="project-neblina.html" style="order: 2;" data-program="Edition Design">
+          <div class="work-thumb" style="height: 480px;"><img src="videos/neblinacover.jpg" alt="O Príncipe da Neblina"></div>
+          <div class="work-row">
+            <p class="work-caption">O Príncipe da Neblina</p>
+            <p class="work-meta">EDITORIAL · BOOKBINDING</p>
+          </div>
+        </a>
+        <a class="work-card" href="project-a-to-b.html" style="order: 4;" data-program="Communication Design III">
+          <div class="work-thumb work-thumb--zoom" style="height: 400px;"><img src="videos/atob1.1.gif" alt="A to B"></div>
+          <div class="work-row">
+            <p class="work-caption">A to B</p>
+            <p class="work-meta">EDITORIAL · RESEARCH</p>
+          </div>
+        </a>
+        <a class="work-card" href="project-cidade-vendida.html" style="order: 6;" data-program="Communication Design V">
+          <div class="work-thumb" style="height: 420px;"><video src="videos/VENDIDA3.1.mp4" autoplay muted loop playsinline></video></div>
+          <div class="work-row">
+            <p class="work-caption">Cidade Vendida</p>
+            <p class="work-meta">EDITORIAL · BOOKBINDING</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="home-end"><div class="he-in"><h2>Let’s talk</h2><div><p class="he-mail"><a href="mailto:teresa.miguel.soares@gmail.com">teresa.miguel.soares@gmail.com</a></p><p class="he-links"><a href="https://drive.google.com/file/d/1lCw1m9q41w9B95u5QCkzBIN3lbWE9ZXe/view?usp=drive_link" target="_blank" rel="noopener">Download CV</a><a href="https://www.linkedin.com/in/teresa-soares-93975616b" target="_blank" rel="noopener">LinkedIn</a><a href="about.html">About me</a></p></div></div></section>
+  </main>
+
+  <script src="portfolio.js"></script>
+  <script src="playground.js"></script>
+</body>
+</html>
